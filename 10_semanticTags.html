@@ -1,0 +1,127 @@
+<!-- Semantic Tags
+Semantic HTML provides meaning to the content of web pages, making it easier for both users and search engines to understand the structure and purpose of the content. By using semantic tags, you improve the accessibility and SEO of your website.
+
+HTML Semantic Tags Overview
+In the past, websites were created using generic tags like <div> and <span>, which don't convey any meaning to search engines. However, with semantic tags like <header>, <nav>, <section>, and <footer>, search engines can easily differentiate the layout and content of the page.
+
+Using semantic elements also helps screen readers, making your website more accessible for users with disabilities.
+
+Common Semantic Elements
+
+<header>: Defines the header of a section or page.
+<nav>: Defines a navigation block.
+<main>: Defines the main content of the page.
+<section>: Defines a section in a document.
+<article>: Defines an independent piece of content.
+<aside>: Defines content related to the main content (like a sidebar).
+<footer>: Defines the footer for a section or page.
+<figure>: Defines a container for images, diagrams, etc.
+<figcaption>: Defines a caption for a <figure>.
+<details>: Creates an interactive disclosure widget.
+<summary>: Defines a visible heading for the <details> element.
+
+Explanation of the Semantic Tags Used
+<header>: Contains the introductory content like the website name and tagline.
+<nav>: Defines the navigation menu with links to different sections of the page.
+<main>: Encloses the main content of the page. This helps search engines understand where the core content is located.
+<section>: Groups related content together, such as the "About Us" and "Services" sections.
+<article>: Represents a self-contained article that can be independently distributed or reused, like a blog post.
+<aside>: Provides supplementary information related to the main content (like a sidebar or news feed).
+<footer>: Contains footer information, such as copyright details.
+Additional Semantic Tags with Examples
+Here are some more examples of semantic HTML elements:
+
+<figure> and <figcaption>: Used to display images or diagrams with captions.
+
+<figure>
+    <img src="example.jpg" alt="A beautiful landscape">
+    <figcaption>A stunning view of the mountains.</figcaption>
+</figure>
+
+<details> and <summary>: Interactive widgets that can be used to hide or show content.
+
+<details>
+    <summary>What is HTML Semantics?</summary>
+    <p>HTML semantics are tags that clearly define the meaning of the content they contain.</p>
+</details>
+
+Why Use Semantic Tags?
+SEO Improvement: Semantic tags make your content more understandable for search engines, improving your site's SEO ranking.
+Accessibility: Screen readers and other assistive technologies use semantic tags to interpret content for users with disabilities.
+Maintainability: Semantic tags make your code easier to read and maintain, as they clearly describe the purpose of different sections of your webpage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, id.</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, error.</p>
+        </section>
+
+        <article>
+            <h3>HTML Semantics</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, tenetur.</p>
+        </article>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <article>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, non?</p>
+            </article>
+
+            <article>
+                <h3>SEO Optimization</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Aside (Related Content) -->
+    <aside>
+        <h4>Latest News</h4>
+        <p>This is an aside tag</p>
+    </aside>
+
+    <!-- <figure> and <figcaption> -->
+    <figure>
+        <img src="photo.avif" alt="A beautiful landscape">
+        <figcaption>A stunning view of the mountains.</figcaption>
+    </figure>
+    
+    <!-- <details> and <summary> -->
+    <details>
+        <summary>What is HTML Semantics?</summary>
+        <p>HTML semantics are tags that clearly define the meaning of the content they contain.</p>
+    </details>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

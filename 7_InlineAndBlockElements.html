@@ -1,0 +1,70 @@
+<!-- Inline vs Block-Level Elements:
+Inline Elements: These elements only take up as much space as they need for their content. They don't force other elements to move to a new line, and they allow multiple elements to be displayed side by side.
+Common inline elements include <span>, <a>, <strong>, and <em>.
+
+Block-Level Elements: These elements take up the full width available in the parent container, and they always start on a new line.
+Examples include <p>, <div>, <h1> - <h6>, and <li>.
+
+Example of Block Elements:
+When you use block elements like <p>, each one takes up the full width of the page and will appear on separate lines even if written consecutively:
+
+<p>This is a paragraph</p>
+<p>This is also a paragraph</p>
+OR
+<p>This is a paragraph</p> <p>This is also a paragraph</p>
+Both of the above examples will output the paragraphs on separate lines, because <p> is a block-level element.
+
+Example of Inline Elements:
+Inline elements like <span> don’t break the flow of content, and they allow other elements to appear in the same line:
+
+<span>This is a span</span> <span>This is also a span</span>
+Both spans will appear in the same line because <span> is an inline element.
+
+Visualizing with Borders:
+To make the distinction more visible, we can use CSS borders to show how block elements take up full width while inline elements only take up the space required by their content.
+
+<p style="border: 2px solid red;">This is a paragraph</p> 
+<p style="border: 2px solid blue;">This is also a paragraph</p>
+
+<span style="border: 2px solid red;">This is a span</span> 
+<span style="border: 2px solid red;">This is also a span</span>
+
+In this example, you can see:
+The <p> elements each take the full width and are displayed on separate lines.
+The <span> elements take only the necessary width and are displayed on the same line.
+
+Inline vs Block-Level Element Identification:
+Let’s identify a few elements based on their behavior:
+
+<li> (List item): Block-level element.
+<em> (Emphasis): Inline element.
+<div>: Block-level element.
+<img>: Inline element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed laudantium velit <span style="color: red;">repudiandae</span>  labore cupiditate. Et at odio dolor sapiente eos odit, nemo optio. Laboriosam quod ex provident enim necessitatibus non blanditiis consequuntur doloribus quo ipsam. Quod quis cum ad?</p>
+
+    <!-- Strong and Anchor tags are inline elements -->
+    <strong style="border: 2px solid red;">This is a strong element</strong> 
+    <a style="border: 2px solid blue;">This is an anchor element</a>
+
+    <!-- Span tags are inline elements -->
+    <span style="border: 2px solid red;">This is a span</span> 
+    <span style="border: 2px solid red;">This is also a span</span>
+
+    <!-- Block-level elements for comparison -->
+    <p style="border: 2px solid green;">This is a block paragraph</p>
+    <div style="border: 2px solid orange;">This is a block div</div>
+</body>
+</html>

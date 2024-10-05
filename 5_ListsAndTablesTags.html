@@ -1,0 +1,129 @@
+<!-- Understanding Lists and Tables in HTML
+
+Lists in HTML
+There are two main types of lists:
+Ordered Lists (<ol>):
+These lists display items in a sequence, using numbers or other specified markers.
+
+Example:
+<ol>
+  <li>This is the first item of my ordered list</li>
+  <li>This is the second item of my ordered list</li>
+</ol>
+
+You can change the type of the list using the type attribute:
+<ol type="I">
+<ol type="A">
+
+Unordered Lists (<ul>):
+These lists display items with bullets (by default, a circle).
+
+Example:
+<ul>
+  <li>This is the first item of my unordered list</li>
+  <li>This is the second item of my unordered list</li>
+</ul>
+
+You can modify the bullet style using the type attribute:
+
+<ul type="square">
+
+Nesting Lists
+You can nest lists within lists to create sub-lists. 
+
+For example:
+
+<ul type="circle">
+  <li>This is the first item of my unordered list</li>
+  <li>This is the second item of my unordered list</li>
+  <ul>
+    <li>nested list one</li>
+    <li>nested list two</li>
+  </ul>
+  <li>This is the third item of my unordered list</li>
+</ul>
+
+Tables in HTML
+A table organizes data into rows and columns. It is created using the <table> element and can be broken down into two main parts:
+
+Table Head (<thead>): This section holds the headers (titles) of the table.
+
+Example:
+
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Roll Number</th>
+    <th>Address</th>
+  </tr>
+</thead>
+
+Table Body (<tbody>): This section holds the actual data in rows.
+
+Example:
+
+<tbody>
+  <tr>
+    <td>John</td>
+    <td>34CS2342</td>
+    <td>Bekar Street</td>
+  </tr>
+  <tr>
+    <td>Das</td>
+    <td>34CS83</td>
+    <td></td>
+  </tr>
+</tbody> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Unordered List with Nested List -->
+    <ul>
+        <li>This is the first item of my unordered list</li>
+        <li>This is the second item of my unordered list</li>
+        <ol>
+          <li>nested list one</li>
+          <li>nested list two</li>
+        </ol>
+        <li>This is the third item of my unordered list</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>This is the first item of my ordered list</li>
+        <li>This is the second item of my ordered list</li>
+    </ol>
+
+    <!-- HTML Table -->
+    <h3>HTML Table</h3>
+    <table border="10">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Address</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>0114CS221016</td>
+                <td>Bekar Street</td>
+            </tr>
+            <tr>
+                <td>Das</td>
+                <td>34CS83</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

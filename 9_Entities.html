@@ -1,0 +1,81 @@
+<!-- HTML Entities
+Entities help display characters that are reserved in HTML or invisible on the page. For instance, if you want to display the less-than symbol < or greater-than symbol > in your HTML, which are typically used in HTML tags, you need to use the appropriate entity for them, otherwise, HTML will treat them as tags.
+
+
+Extra Spaces: If you want to add extra spaces in HTML (which are usually ignored), you can use the &nbsp; entity, which represents a non-breaking space. 
+For example, &nbsp;&nbsp; adds two spaces.
+
+Reserved Characters: Reserved characters like <, >, &, etc., are used in HTML tags. To display them on a webpage as characters and not HTML syntax, use the corresponding entities:
+< becomes &lt;
+> becomes &gt;
+
+Special Symbols: HTML provides entities for many common symbols:
+Pound symbol: &pound;
+Copyright symbol: &copy;
+Registered trademark: &reg;
+Left and right arrows: &larr; and &rarr;
+Fractions: &frac14; (for ¼)
+Displaying Reserved Characters
+
+In the below example:
+<p>Display the less-than symbol: &lt; and the greater-than symbol: &gt;</p>
+Here, &lt; displays < and &gt; displays > on the webpage.
+
+Additional Spaces with &nbsp;
+By default, HTML collapses multiple spaces into a single space. To add extra spaces, you can use the non-breaking space entity &nbsp;.
+
+Example:
+
+<p>This is another &nbsp;&nbsp; paragraph with two extra spaces.</p>
+This line will add two spaces between "another" and "paragraph".
+
+Special Characters Example:
+If you need to show special symbols, such as the Pound (£) sign or Copyright (©) sign, you can use their corresponding HTML entities:
+
+<p>Pound currency symbol: &pound;</p>
+<p>Copyright symbol: &copy;</p>
+<p>Registered trademark symbol: &reg;</p>
+
+
+HTML entities allow you to display characters that are either reserved by HTML or can't be typed easily. They start with & and end with ;, and there are numerous entities available for different characters and symbols.
+
+Here’s a list of some common HTML entities you might use:
+
+Space: &nbsp;
+Less than: &lt;
+Greater than: &gt;
+Ampersand: &amp;
+Quotation mark: &quot;
+Pound (£): &pound;
+Copyright (©): &copy;
+Registered trademark (®): &reg; -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>This is a normal paragraph.</p>
+    </div>
+
+    <div class="container">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum reiciendis eligendi architecto                                                 aspernatur obcaecati quasi, sequi, sint impedit non voluptate doloremque quibusdam quidem autem, quisquam ipsam? Cumque excepturi dicta voluptatem.</p>
+
+        <p>This is another &nbsp;&nbsp; paragraph with < two extra spaces.</p>
+        <p>Display the less-than symbol: &lt; and the greater-than symbol: &gt;</p>
+        <p>Pound currency symbol: &pound;</p>
+        <p>Copyright symbol: &copy;</p>
+        <p>Registered trademark symbol: &reg;</p>
+        <p>Left arrow symbol: &larr;</p>
+        <p>Right arrow symbol: &rarr;</p>
+        <p>One-fourth fraction: &frac14;</p>
+        <p>Ampersand: &amp;</p>
+    </div>
+</body>
+</html>

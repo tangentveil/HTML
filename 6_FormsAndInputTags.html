@@ -1,0 +1,106 @@
+<!-- Forms are crucial for gathering user input and submitting it to a server for processing. The form tag (<form>) defines the section of a document for collecting data, and it typically includes fields like text inputs, email inputs, checkboxes, radio buttons, and buttons for submitting or resetting the form.
+
+Here’s a summary of the key points:
+
+Form Structure:
+The <form> tag includes an action attribute, specifying where the form data should be sent (e.g., backend.php).
+
+<form action="backend.php">
+
+Input Types:
+
+Text Input: Use <input type="text"> for text-based input.
+<input type="text" name="myName" id="name">
+
+Email Input: Use <input type="email"> to accept a valid email address.
+<input type="email" name="myEmail">
+
+Date Input: To accept a date, use <input type="date">.
+<input type="date" name="myDate">
+
+Number Input: For numerical input, use <input type="number">.
+<input type="number" name="phoneNo">
+
+Checkboxes: Allow users to select multiple options.
+<input type="checkbox" name="Milk" checked>
+
+Radio Buttons: For single-choice options like gender selection.
+<input type="radio" name="myGender" value="male"> Male
+<input type="radio" name="myGender" value="female"> Female
+<input type="radio" name="myGender" value="other"> Other
+
+Text Area: For longer text inputs, use <textarea>.
+<textarea name="myText" cols="90" rows="10"></textarea>
+
+Dropdown Menu: Use <select> and <option> to create a dropdown menu for options.
+<select name="myCar" id="car">
+    <option value="ind">Indica</option>
+    <option value="swf" selected>Swift</option>
+</select>
+
+Buttons:
+Submit Button: Submits the form data to the server.
+<input type="submit" value="Submit Now">
+
+Reset Button: Resets all the form fields.
+<input type="reset" value="Reset Now"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="myName" id="name" required>
+        </div>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <div>
+            Date: <input type="date" name="myDate" min="2023">
+        </div>
+
+        <div>
+            Phone Number: <input type="number" name="phoneNo">
+        </div>
+
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+
+        <div>
+            Gender: 
+            Male <input type="radio" name="myGender" value="male"> 
+            Female <input type="radio" name="myGender" value="female">
+            Other <input type="radio" name="myGender" value="other">
+        </div>
+
+        <div>
+            Write about yourself:<br>
+            <textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="">Select Your Car</option>
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+</html>

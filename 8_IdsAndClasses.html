@@ -1,0 +1,117 @@
+<!-- IDs in HTML:
+An ID is a unique identifier for an HTML element. Each element in the document can have only one ID, and each ID can only be applied to one element in the entire HTML document. It’s useful when you want to target a specific element with JavaScript or CSS.
+
+Example of ID:
+
+<div id="Box" class="redBg">
+    This is the box.
+</div>
+
+In this example:
+The id="Box" gives a unique identity to the <div> element. No other element on this page should have the same ID.
+IDs are commonly used when you want to apply unique styles or select specific elements using JavaScript.
+
+CSS Example for ID:
+
+#Box {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+In this CSS example, we use #Box to select the element with that specific ID and apply styles like background color and border.
+
+Classes in HTML:
+A Class is used to group multiple elements together and apply the same styles or behaviors. Unlike IDs, multiple elements can share the same class, and a single element can have multiple classes.
+
+Example of Class:
+<div class="redBg blackBorder">
+    This element has both red background and black border.
+</div>
+
+In this example:
+The class="redBg blackBorder" adds two classes to the <div> element, allowing it to inherit styles from both classes.
+Classes are reusable, which means you can assign the same class to multiple elements.
+
+CSS Example for Class:
+
+.redBg {
+    background-color: red;
+}
+
+.blackBorder {
+    border: 2px solid black;
+}
+
+Here, both .redBg and .blackBorder can be applied to any elements, giving them a red background and black border respectively.
+
+Difference Between ID and Class:
+ID: Can only be used once in an HTML document, unique to a single element.
+Class: Can be used on multiple elements, and multiple classes can be assigned to a single element.
+
+CSS Syntax:
+ID: Use # followed by the ID name (e.g., #Box).
+Class: Use . followed by the class name (e.g., .redBg). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Styling using IDs */
+        #mainBox {
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #Box {
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+        /* Styling using Classes */
+        .redBg {
+            background-color: red;
+        }
+        .blackBorder {
+            border: 2px solid black;
+        }
+        .blackBackground {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- An element with both an ID and classes -->
+    <div id="Box" class="redBg blackBorder">
+        This is the box with an ID and classes.
+    </div>
+
+    <!-- Elements with a class -->
+    <span class="redBg">This is a span with a red background.</span>
+    <span class="redBg">This is another span with a red background.</span>
+
+    <!-- An element with only an ID -->
+    <span id="mainSpan">This is a span with an ID only.</span>
+
+    <!-- An element with multiple classes -->
+    <div class="redBG blackBorder anotherClass">
+        This div has multiple classes.
+    </div>
+
+    <!-- Element with just one class -->
+    <div class="blackBackground">
+        This div has a black background.
+    </div>
+
+    <!-- Creating multiple elements with the same classes -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+</body>
+</html>

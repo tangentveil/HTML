@@ -1,0 +1,51 @@
+<!-- Understanding anchor and image in HTML
+ Anchor Tag (<a>)
+
+<a href="url">Text Name</a>
+href: The url where the user is redirected after clicking the link.
+Text Name: This is the text that users click on to follow the link.
+
+Example:
+<a href="https://google.com">Google</a>
+
+Opening Links in a New Tab: To open a link in a new tab, you use the target attribute with the value _blank:   
+
+<a href="https://google.com" target="_blank">Google</a>
+
+Internal Links: You can also link to pages within your website by providing a relative path to the file:
+<a href="1_basicStructure.html" target="_blank">Basic Structure</a>
+
+Difference Between Tag and Attribute
+Tag: A tag is an HTML element (like <a> or <img>) that defines content or functionality.
+Attribute: Attributes provide additional information about HTML elements, such as href in <a> or src in <img>. Attributes enhance the functionality or behavior of an element.
+
+Image Tag (<img>)
+<img src="url" alt="Description of image">
+src: The source or url of the image.
+alt: Alternate text that displays if the image fails to load.
+
+Example:
+<img src="" alt="No Image">
+
+Adjusting Image Dimensions: You can manipulate the dimensions of the image using the width and height attributes:
+<img src="https://images.unsplash.com/photo-1516280030429-27679b3dc9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MTQ5NzR8MHwxfHNlYXJjaHwxfHxjYXRzfGVufDB8fHx8MTcyNjg5NzY5M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="cat" width="233" height="34">
+Note: It is generally recommended to use CSS for styling and resizing images, rather than using width and height directly in HTML. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Links with target="_blank" to open in a new tab -->
+     <a href="https://google.com" target="_blank">Google</a><br>
+     <a href="https://facebook.com" target="_blank">Facebook</a><br>
+     <a href="https://linkedin.com" target="_blank">LinkedIn</a><br>
+     <a href="1_basicStructure.html" target="_blank">Basic Structure</a><br>
+ 
+     <!-- Image with alt text -->
+     <img src="https://images.unsplash.com/photo-1516280030429-27679b3dc9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MTQ5NzR8MHwxfHNlYXJjaHwxfHxjYXRzfGVufDB8fHx8MTcyNjg5NzY5M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="cat" width="233" height="34">
+</body>
+</html>
